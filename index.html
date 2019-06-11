@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- 
+Pagina web desarrollada por Salvador Alexandro Ramirez Martinez (RMZ WEBDEV).
+Para la compañía salud 360-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SALUD 360</title>
+    <link rel="icon" type="image/png" href="Imagenes/SALUD%20360%20logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.2.1.min.js" ></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery-numerator.js"></script>
+
+    <script >
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady(){
+        player = new YT.Player('player',{
+          height: '100%',
+          width: '100%',
+          playerVars:{
+            autoplay:1,
+            loop: 1,
+            controls:0,
+            showinfo:0,
+            autohide:1,
+            modestbranding: 1,
+            rel: 0,
+            playsinline: 0,
+            playlist: '5Y5MpNuyq9U',
+            vq:'hd1080'
+          },
+          videoId: '5Y5MpNuyq9U',
+          events:{
+            'onReady': onPlayerReady,
+            'onStateChange':onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event){
+        event.target.playVideo();
+        player.mute();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event){
+
+      }
+      function stopVideo(){
+        player.stopVideo();
+      }
+    </script>
+  </head>
+  <body>
+    <script >
+      $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 600) {
+            $(".navbar").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".navbar").removeClass("active");
+        }
+    });
+});
+    </script>
+
+    <header>
+      <div class="navbar">
+          <div class="container">
+            <div class="logo"> <a href="Index.html"><img src="logo.png" width="100%" height="140%"></a></div>
+            <nav>
+            <ul>
+                <li class="grande"><a href="Index.html">Inicio</a></li>
+                <li class="grande"><a href="views/Servicios.html">Nosotros</a></li>
+                <li class="grande"><a href="views/SemanaSalud.html">Servicios</a></li>
+                <li class="grande"><a href="views/contacto.html">Contacto</a></li>
+                <li class="grande"><a href="http://ingresar.salud360.mx/">Ingresar</a>                
+                </li>
+            </ul>
+            </nav>
+      </div>
+    </div>
+    </header>
+
+ 
+    
+        <!-- Aqui  esta la division de servicios-->
+        <div class="container_video">
+        <div id="player">
+        </div>
+          <div class="content" >
+            <h1>Salud para <span class="ityped"></span></h1>
+            <script type="text/javascript" src="js/ityped.js"></script>
+            <script type="text/javascript">
+                window.ityped.init(document.querySelector('.ityped'),{
+                    strings: ['mi empresa', 'mi familia', 'mi bolsillo', 'los godínez'],
+                    typeSpeed: 90,
+                    backSpeed: 100,
+                    backDelay: 800,
+                    loop: true,
+                    showCursor: true,
+                    cursorChar: '|',
+                })
+            </script>
+                <div class="area">
+                    <p>En Monterrey y Área Metropolitana</p> <p></p>
+                </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+          <div class="servicios6">
+            <div class="tituloNutricion">
+                  <h1>Información<br></h1>
+                  <span>Horario: 9:00 a.m. a 6:00 p.m.</span><br>
+                  <span>Lunes a Viernes</span><br>
+                  <span>Whatsapp: (812) 568 9915.</span><br>
+                  <span>Correo electrónico:</span><br>
+                  <span>hola@salud360.mx</span>
+           </div>
+                <div class="tituloNutricion">
+              <h1>Acerca de</h1>  
+              <span>Hola, somos Salud 360 y</span><br>
+              <span>queremos ayudarte a mejorar tu</span><br>
+              <span>salud y la salud de los</span><br>
+              <span>colaboradores de tu empresa.</span><br>
+            </div>
+           </div>
+          </div>
+
+        <div class="container">
+            <div class="servicios6">
+                <div class="titleContacto">
+                    <h1>¡Pongámonos en contacto!<br></h1>
+                    <span>Nos encantará saber de ti y que nos cuentes como podemos ayudarte.</span>
+                </div>
+                <div class="contenidoNutricion" style="width:0;">
+                    <form action="views/contacto.html">
+                      <input type="submit" class="button" value="Contacto">
+                    </form>
+                </div>
+            </div>
+        </div>
+      
+    <!-- Contacto y mapa -->
+    <footer>
+      <p>Todos los derechos reservados &copy; 2019 SALUD 360 - Programa de nutrición<br>Aviso de provacidad</p>
+    </footer>
+
+
+      <!-- Codigio para hacer que la pagina se vea mas fluida y menos cuadrada -->
+      <!--Realizado por Salvador Alexandro Ramirez Martinez (Developer), con ayuda de Natalia López Almaguer (Designer).
+                Con contribucion de: David Salazar y Ricardo Romero-->
+      <script type="text/javascript" src="js/typed.js"></script>
+      <script type="text/javascript" src="js/waypoints.min.js"></script>
+      <script type=""></script>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+      <script src="js/smooth.js"></script>
+      <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="Counter-Up-master/jquery.counterup.min.js"></script>
+  </body>
+  </html>
