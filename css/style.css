@@ -147,6 +147,11 @@ padding-left: 0em;
   overflow:hidden;
 }
 
+.container_player{
+  height: 530px;
+  overflow:hidden;
+}
+
 .containerr{
     margin:800px;
 }
@@ -610,7 +615,7 @@ z-index: 2;
 }
 .servicioSeccion{
     width: 80%;
-    margin-top: 5%;
+    margin: 5% 0%;
     padding: 0% 10%;
 }
 
