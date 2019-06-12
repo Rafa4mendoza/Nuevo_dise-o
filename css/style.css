@@ -547,8 +547,7 @@ z-index: 2;
 .nosotrosSection p{
     font-size: 35px;
     margin-top: 0%;
-}
-.nosotorsDiv{
+    color: rgb(127, 127, 127);
 }
 .nosotrosDiv hr{
     display: inline-block;
@@ -563,7 +562,6 @@ z-index: 2;
 }
 .nosotrosDiv p{
     display: inline-block;
-    width: 30%;
     font-size: 18px;
 }
 
