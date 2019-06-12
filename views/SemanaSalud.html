@@ -12,6 +12,31 @@ Para la compañía salud 360-->
     <script src="https://code.jquery.com/jquery-3.2.1.js" ></script>
     <script type="text/javascript" src="../js/waypoints.min.js"></script>
     <script type="text/javascript" src="Counter-Up-master/jquery.counterup.min.js"></script>
+    
+        <style type="text/css">
+      @media only screen and (min-width: 1280px){
+        .container_video{
+          height: 720px;
+          margin-bottom: 2%;
+        }
+        .servicios6{
+          padding: 0% 0%;
+          padding-bottom: 5%;
+        }
+        .tituloNutricion span{
+          font-size: 18px;
+        }
+        #imgPadd{
+          padding-right: 2.2%;
+        }
+        .container_player{
+          height: 505px;
+        }
+        #vl{
+          height: 33%;
+        }
+      }
+    </style>
 
     <script >
       var tag = document.createElement('script');
@@ -22,7 +47,7 @@ Para la compañía salud 360-->
       var player;
       function onYouTubeIframeAPIReady(){
         player = new YT.Player('player',{
-          height: '530',
+          height: '100%',
           width: '100%',
           playerVars:{
             autoplay:1,
@@ -147,7 +172,7 @@ Para la compañía salud 360-->
 
                 <div class="contenidoNutricion" style="width:0;">
                     <form action="contacto.html">
-                      <input type="submit" class="button" value="Contacto" style="padding-left: 4vw;">
+                      <input type="submit" class="button" value="Contacto">
                     </form>
                         
                 </div>
