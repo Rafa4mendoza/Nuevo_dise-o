@@ -14,26 +14,16 @@ Para la compañía salud 360-->
     <script type="text/javascript" src="Counter-Up-master/jquery.counterup.min.js"></script>
     
         <style type="text/css">
-      @media only screen and (min-width: 1280px){
-        .container_video{
-          height: 720px;
-          margin-bottom: 2%;
-        }
+      @media only screen and (max-width: 1200px){
         .servicios6{
           padding: 0% 0%;
           padding-bottom: 5%;
         }
+        .titleContacto span {
+          font-size:18px;
+        }
         .tituloNutricion span{
           font-size: 18px;
-        }
-        #imgPadd{
-          padding-right: 2.2%;
-        }
-        .container_player{
-          height: 505px;
-        }
-        #vl{
-          height: 33%;
         }
       }
     </style>
@@ -136,7 +126,7 @@ Para la compañía salud 360-->
         
         <div class="container">
           <div class="servicioSeccion">
-            <div>
+            <div class="seccionTexto" style="width: 36%">
               <img src="../Imagenes/flecha_cuadro_verde.png"><br>
               <span>1. Semana de diagnostico</span>
               <ul style="margin-bottom: 27px;">
@@ -149,7 +139,7 @@ Para la compañía salud 360-->
               <br>
             </div>
               <div id="vl"></div>
-              <div>
+              <div class="seccionTexto" style="width: 40%">
               <img src="../Imagenes/cuadro_verde_flecha.png"><br>
               <span>2. Nutróloga en tu empresa</span>
               <ul>
@@ -166,13 +156,13 @@ Para la compañía salud 360-->
         </div>
 
         <div class="container">
-            <div class="servicios6" style="display:table;">
+            <div class="servicios6" >
                 <div class="titleContacto">
                     <h1>¡Pongámonos en contacto!<br></h1>
                     <span>Nos encantará saber de ti y que nos cuentes como podemos ayudarte.</span>
                 </div>
 
-                <div class="contenidoNutricion" style="width:0;">
+                <div class="contenidoNutricion">
                     <form action="contacto.html">
                       <input type="submit" class="button" value="Contacto">
                     </form>

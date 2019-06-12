@@ -5,25 +5,6 @@ body{
   background-color: white;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px){
-    .container_video{
-        height: 230px;
-    }
-    .container{
-        width: 100%;
-    }
-    .content{
-        top:5%;
-        padding: 20px 15px;
-    }
-    .tituloNutricion h1{
-        font-size: 20px;
-    }
-    .tituloNutricion span{
-        font-size: 15px;
-    }
-}
-
 /* Global */
 .container{
   width:70%;
@@ -60,14 +41,14 @@ padding-left: 0em;
 }
 
 .formulario input{
-    width: 180px;
+    width: calc(100%/2.3);
     height:40px;
     text-align: left;
     color:#605E5E;
     border-color: rgba(204, 204, 204, 1);
     border-style: solid;
     background-color: rgba(204, 204, 204, 0.17);
-    margin-right: 5%;
+    margin-right: 2%;
     margin-bottom: 5%;
     padding-left: 2%;
 }
@@ -84,13 +65,13 @@ padding-left: 0em;
     padding-left: 2%;
 }
 #inputComment{
-    width: 85%;
+    width: 92%;
     height: 100px;
     color:#605E5E;
     border-color: rgba(204, 204, 204, 1);
     border-style: solid;
     background-color: rgba(204, 204, 204, 0.17);
-    margin-right: 5%;
+    margin-right: 2%;
     margin-bottom: 5%;
     padding-left: 2%;
     font-weight: 400;
@@ -109,7 +90,7 @@ padding-left: 0em;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 1.0vw 0em;
+    margin: 1.0vw 1em;
     margin-top: 3.0vw;
     cursor: pointer;
     transition: all 0.5s;
@@ -142,13 +123,13 @@ padding-left: 0em;
 }
 .container_video{
   width:100%;
-  height: 840px;
+  height: 56vw;
   margin-top:5%;
   overflow:hidden;
 }
 
 .container_player{
-  height: 530px;
+  height: 39vw;
   overflow:hidden;
 }
 
@@ -484,13 +465,11 @@ z-index: 2;
 }
 .servicios6{
     width: 100%;
-    padding: 0% 5%;
     padding-bottom: 5%;
 }
 
 .servicios6 div{
     display: inline-block;
-    padding-right: 5%;
     vertical-align: top;
 }
 
@@ -568,7 +547,6 @@ z-index: 2;
 .nosotrosSection p{
     font-size: 35px;
     margin-top: 0%;
-    padding-right: 5%;
 }
 .nosotorsDiv{
 }
@@ -585,22 +563,21 @@ z-index: 2;
 }
 .nosotrosDiv p{
     display: inline-block;
-    width: 25%;
+    width: 30%;
     font-size: 18px;
 }
 
 .fotoWrapper{
-    padding: 2px 5px;
 }
 
 .fotoWrapper img{
-    height: 234px;
-    width: 280px;
+    height: 100%;
+    width: 30%;
     margin-bottom: 33px;
     object-fit: cover;
 }
 #imgPadd{
-    padding-right: 4.5%;
+    padding-right: 3.8%;
 }
 
 .inicioSeccion{
@@ -619,12 +596,13 @@ z-index: 2;
     padding: 0% 10%;
 }
 
-.servicioSeccion div{
-    padding: 0em 3em;
+.seccionTexto{
+    padding-left: 0%;
     display: inline-block;
+    vertical-align: top;
 }
 
-.servicioSeccion img{
+.seccionTexto img{
     height: 39px;
     width: 53px;
     padding: 0% 40%;
@@ -642,24 +620,24 @@ z-index: 2;
 
 
 #vl{
-    border-left: 3px solid rgba(19, 214, 143, 1);
-    height: 37%;
-    position: absolute;
+    background-color: rgba(19, 214, 143, 1);
+    height: 250px;
+    margin: 0% 10%;
+    width: 0.5%;
+    /*position: absolute;
     left:48%;
-    margin-left: -3px;
+    margin-left: -3px;*/
+    display: inline-block;
 }
 .button {
     background-color:rgba(19, 214, 143, 1);
     border: none;
     color: #ffffff;
-    padding: 1.2vw;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding: 8% 45%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 1.0vw 0em;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -768,7 +746,8 @@ z-index: 2;
 }
 
 .tituloNutricion{
-    width: 30%;
+    width: 40%;
+    padding-right: 5%;
 }
 .tituloNutricion h1{
     text-align: left;
@@ -811,12 +790,12 @@ z-index: 2;
 }
 
 .contenidoNutricion{
-    padding-left: 0%;
-    width: 60%;
+    width: 20%;
+    padding-top: 1.5%;
 }
 
 .titleContacto{
-    padding: 1.2vw;
+    width: 70%;
 }
 .titleContacto h1{
     text-align: left;
