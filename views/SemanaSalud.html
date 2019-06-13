@@ -44,16 +44,17 @@ Para la compañía salud 360-->
     }
     .container{
         width: 100%;
-        padding: 0% 5%
     }
     .serviciosDiv{
       margin-top: 10%;
+      padding: 0% 5%
     }
 
     #dashed{
-      width: 20%;
+      width: 10%;
       margin-bottom: 1%;
       margin-right: 5%;
+      margin-left: 5%;
       }
     .serviciosDiv p{
       font-size: 5vw;
@@ -61,14 +62,20 @@ Para la compañía salud 360-->
     }
 
     .servicioSeccion{
-      width: 100%;
+      width: 90%;
       padding: 0% 5%;
     }
         .serviciosSection p{
       font-size: 8vw;
-      padding-left: 0%;
+      padding: 0% 5%;
     }
 
+    .servicioSeccion span{
+      padding-left: 0%;
+    }
+    .servicioFlecha{
+      padding: 0% 5%;
+    }
     .servicioFlecha img{
       height: 100%;
       width: 20%;
@@ -78,12 +85,17 @@ Para la compañía salud 360-->
     .container_player{
       height: 56vw;
       margin-bottom: 5%;
+      padding: 0% 5%;
     }
 
     #vl{
       display: none;
     }
 
+    .seccionTexto img{
+      padding: 0% 45%;
+    }
+    
     #derecho{
       width: 100%;
     }
@@ -92,16 +104,25 @@ Para la compañía salud 360-->
       width: 100%;
     }
 
+    .servicioTexto{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
     .contenidoNutricion{
       width: 60%;
     }
 
     .button{
       padding: 4% 45%;
+      -web-kit-apparence: none;
+      border-radius: 0;
     }
     footer p{
-      font-size: 5vw;
-      text-align: left;
+      font-size: 8px;
     }
 }
     </style>
@@ -206,6 +227,8 @@ Para la compañía salud 360-->
           <div class="servicioSeccion">
             <div class="seccionTexto" id="derecho">
               <img src="../Imagenes/flecha_cuadro_verde.png"><br>
+
+              <div class="servicioTexto">
               <span>1. Semana de diagnostico</span>
               <ul style="margin-bottom: 27px;">
                 <li>Evaluación de indicadores.</li>
@@ -213,12 +236,15 @@ Para la compañía salud 360-->
                 <li>1 plática del tema de su preferencia.</li>
                 <li>Reporte de resultados.</li>
               </ul>
+              </div>
               <br>
               <br>
             </div>
               <div id="vl"></div>
               <div class="seccionTexto" id="izquierdo">
               <img src="../Imagenes/cuadro_verde_flecha.png"><br>
+
+              <div class="servicioTexto">
               <span>2. Nutróloga 360</span>
               <ul>
                 <li>Acceso a la plataforma salud360.mx.</li>
@@ -229,6 +255,7 @@ Para la compañía salud 360-->
                 <li>Reporte inicial y final de resultados.</li>
                 <li>1 taller de lectura de etiquetas.</li>
               </ul>
+              </div>
             </div>
           </div>
         </div>
