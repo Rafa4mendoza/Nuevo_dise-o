@@ -557,6 +557,8 @@ z-index: 2;
 }
 
 #dashed{
+    display: inline-block;
+    margin: 0.5em 0em;
     border:2px dashed rgba(19, 214, 143, 1);
     width: 3%;
 }
@@ -565,6 +567,27 @@ z-index: 2;
     font-size: 18px;
 }
 
+.serviciosDiv p{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.serviciosSection {
+    line-height: 1.2;
+}
+
+.serviciosSection p{
+    font-size: 30px;
+    padding-left: 3%;
+    margin-top: 0%;
+    color: rgb(127, 127, 127);
+}
+
+.servicioFlecha img{
+    height: 57px;
+    width: 93px;
+    padding-left: 85%;
+}
 .fotoWrapper{
 }
 
@@ -592,6 +615,14 @@ z-index: 2;
     width: 80%;
     margin: 5% 0%;
     padding: 0% 10%;
+}
+
+#derecho{
+    width: 36%;
+}
+
+#izquierdo{
+    width: 40%;
 }
 
 .seccionTexto{

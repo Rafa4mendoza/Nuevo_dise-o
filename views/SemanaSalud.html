@@ -26,6 +26,84 @@ Para la compañía salud 360-->
           font-size: 18px;
         }
       }
+
+      @media only screen and (min-width: 300px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 1){
+    .titleContacto{
+      padding-left: 5%;
+      margin-bottom: 3%;
+    }
+    .titleContacto h1{
+      width: 120%;
+      font-size: 6vw;
+    }
+    .titleContacto span{
+      font-size: 440%;
+    }
+    .contenidoNutricion{
+      padding-left: 5vw;
+    }
+    .container{
+        width: 100%;
+        padding: 0% 5%
+    }
+    .serviciosDiv{
+      margin-top: 10%;
+    }
+
+    #dashed{
+      width: 20%;
+      margin-bottom: 1%;
+      margin-right: 5%;
+      }
+    .serviciosDiv p{
+      font-size: 5vw;
+      font-weight: bold;
+    }
+
+    .servicioSeccion{
+      width: 100%;
+      padding: 0% 5%;
+    }
+        .serviciosSection p{
+      font-size: 8vw;
+      padding-left: 0%;
+    }
+
+    .servicioFlecha img{
+      height: 100%;
+      width: 20%;
+      padding-left: 80%;
+    }
+
+    .container_player{
+      height: 56vw;
+      margin-bottom: 5%;
+    }
+
+    #vl{
+      display: none;
+    }
+
+    #derecho{
+      width: 100%;
+    }
+
+    #izquierdo{
+      width: 100%;
+    }
+
+    .contenidoNutricion{
+      width: 60%;
+    }
+
+    .button{
+      padding: 4% 45%;
+    }
+    footer p{
+      font-size: 5vw;
+      text-align: left;
+    }
+}
     </style>
 
     <script >
@@ -103,18 +181,18 @@ Para la compañía salud 360-->
     <br>
     <br>
     <div class="container">
-      <div class="nosotrosDiv">
+      <div class="serviciosDiv">
         <hr id="dashed">
         <p>Nuestros servicios.</p>
       </div>
-      <div class="nosotrosSection">
-        <p style="font-size: 30px; padding-left: 3%;">Mejoramos la salud de los colaboradores a través de programas preventivos en temas de nutrición.</p>
+      <div class="serviciosSection">
+        <p>Mejoramos la salud de los colaboradores a través de programas preventivos en temas de nutrición.</p>
       </div>
     </div>
 
             <div class="container" style="margin-bottom: 2%;">
-          <div>
-            <img src="../Imagenes/flecha_verde.png" style="height: 57px; width: 93px; padding-left: 85%;">
+          <div class="servicioFlecha">
+            <img src="../Imagenes/flecha_verde.png">
           </div>
         </div>
 
@@ -126,7 +204,7 @@ Para la compañía salud 360-->
         
         <div class="container">
           <div class="servicioSeccion">
-            <div class="seccionTexto" style="width: 36%">
+            <div class="seccionTexto" id="derecho">
               <img src="../Imagenes/flecha_cuadro_verde.png"><br>
               <span>1. Semana de diagnostico</span>
               <ul style="margin-bottom: 27px;">
@@ -139,7 +217,7 @@ Para la compañía salud 360-->
               <br>
             </div>
               <div id="vl"></div>
-              <div class="seccionTexto" style="width: 40%">
+              <div class="seccionTexto" id="izquierdo">
               <img src="../Imagenes/cuadro_verde_flecha.png"><br>
               <span>2. Nutróloga 360</span>
               <ul>
