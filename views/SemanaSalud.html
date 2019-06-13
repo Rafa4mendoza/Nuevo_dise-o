@@ -28,8 +28,12 @@ Para la compañía salud 360-->
       }
 
       @media only screen and (min-width: 300px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 1){
+            header .logo{
+      width: 20%;
+      height: 40px;
+    }
     .titleContacto{
-      padding-left: 5%;
+      padding: 5% 15%;
       margin-bottom: 3%;
     }
     .titleContacto h1{
@@ -40,7 +44,7 @@ Para la compañía salud 360-->
       font-size: 440%;
     }
     .contenidoNutricion{
-      padding-left: 5vw;
+      padding: 0% 20%;
     }
     .container{
         width: 100%;
@@ -117,18 +121,103 @@ Para la compañía salud 360-->
     }
 
     .button{
-      padding: 4% 45%;
-      -web-kit-apparence: none;
+      padding: 4% 33%;
       border-radius: 0;
     }
     footer p{
       font-size: 8px;
     }
+
+    /* header*/
+    header a:hover{
+  color:rgba(19, 214, 143, 1);
+  font-weight:bold;
+}
+    .navbar li a {
+        display: block;
+        padding: 13px 30vw;
+    }
+    header li {
+      display: list-item;
+    }
+    .nacbar li a:hover, .navbar .menu-btn:hover {
+      background-color: #f4f4f4;
+      }
+      .navbar nav {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+      list-style: none;
+  float: left;
+}
+.navbar .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navbar .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navbar .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.navbar .menu-btn {
+  display: none;
+}
+
+.navbar .menu-btn:checked ~ nav {
+  max-height: 240px;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
 }
     </style>
 
     <script >
-      var tag = document.createElement('script');
+      var tag = document.createEl
+      -web-kit-apparence: none;ement('script');
       tag.src = "https://www.youtube.com/player_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);
@@ -178,7 +267,9 @@ Para la compañía salud 360-->
     <header>
       <div class="navbar" style="background-color: white;">
           <div class="container">
-            <div class="logo"> <a href="Index.html"><img src="../logo.png" width="100%" height="140%"></a></div>
+            <div class="logo"> <a href="index.html"><img src="../logo.png" width="100%" height="140%"></a></div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+              <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <nav>
             <ul>
                 <li class="grande"><a href="../index.html">Inicio</a></li>

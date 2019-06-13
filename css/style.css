@@ -172,20 +172,6 @@ padding-left: 0em;
   padding-right: 0px;
   list-style: none;
 }
-.submenu {
-    display: none;
-    position: fixed;
-    width: 5em;
-    padding-left: 2%;
-    padding-inline-start: 0%;
-}
-.submenu li {
-    background-color: rgb(255, 255, 255);
-    padding-top: 1em;
-    min-width: 9em;
-    border:1px solid;
-    padding: 12px;
-}
 /* Header **/
 header{
   background:#4AADE4;
@@ -242,6 +228,13 @@ header a:hover{
   font-weight:bold;
 }
 
+  .navbar .menu-icon {
+    display: none;
+  }
+
+  #menu-btn{
+    display: none;
+  }
 
 /* Showcase */
 
