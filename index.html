@@ -262,6 +262,7 @@ header a:hover{
             var expire = new Date();
             expire = Date(expire.getTime()+7776000000);
             document.cookie = "cookie=here; expires=" + expire;
+            console.log("entrada if");
           }
           else {
             $('.content').show();
@@ -269,23 +270,20 @@ header a:hover{
       });
     });
 
-      function getCookie(c_name) {
-    var c_value = document.cookie;
-    var c_start = c_value.indexOf(" " + c_name + "=");
-    if (c_start == -1) {
-        c_start = c_value.indexOf(c_name + "=");
+    function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
     }
-    if (c_start == -1) {
-        c_value = null;
-    } else {
-        c_start = c_value.indexOf("=", c_start) + 1;
-        var c_end = c_value.indexOf(";", c_start);
-        if (c_end == -1) {
-            c_end = c_value.length;
-        }
-        c_value = unescape(c_value.substring(c_start, c_end));
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
     }
-    return c_value;
+  }
+  return cname;
 }
     </script>
     <script>
