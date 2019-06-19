@@ -12,9 +12,9 @@ body{
   overflow:hidden;
 }
 
-.container h2{
+
+#frase{
     font-size: 21px;
-    font-style: italic;
     color: rgb(127, 127, 127);
 }
 

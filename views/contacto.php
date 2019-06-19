@@ -4,16 +4,16 @@ if (isset($_POST['submit'])) {
   $lastname =$_POST['lastname'];
   $email=$_POST['email'];
   $servicio=$_POST['servicio'];
-  $msg=$_POST['msg']
-
+  $msg=$_POST['msg'];
+    $to= 'hola@salud360.mx';
   $subject='Pagina Salud360';
   $message="Nombre".$name."\n"."Apellido".$lastname."\n"."Servicio: ".$servicio."\n"."Escribio: "."\n\n".$msg;
-  $headers="De: ".$email;
+  $headers .="De: ".$email;
 
   if(mail($to, $subject, $message, $headers)){
     echo "Home.html";
   }else{
-    echo "Something went wrong"
+    echo "Something went wrong";
   }
 }
 ?>
@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
       
     <div class="container">
         <div class="recuadro-contacto">
-    <form action="/contacto.php">
+    <form action="contacto.php" method="post">
 
     <label for="name">Nombre</label>
     <input type="text" name="name" placeholder="Nombre">
