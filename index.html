@@ -253,6 +253,7 @@ header a:hover{
 
     /*Popup*/
     <script>
+      $(function (){
         $(document).ready(function(){
         console.log(document.cookie);
         var visit = getCookie("cookie");
@@ -266,6 +267,7 @@ header a:hover{
             $('.content').show();
           }
       });
+    });
 
       function getCookie(c_name) {
     var c_value = document.cookie;
@@ -288,9 +290,11 @@ header a:hover{
     </script>
     <script>
 
+      $(function(){
         $('.close').click(function(){
     $('.overlay').hide();
     $('.content').show();
+      });
       });
     
       </script>
