@@ -165,8 +165,7 @@ padding-left: 0em;
     left: 0;
     right: 0;
     transition: opacity 500ms;
-    opacity: 1;
-    visibility: visible;
+    display: none;
 }
 
 .popup {
