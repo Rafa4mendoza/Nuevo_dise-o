@@ -254,17 +254,39 @@ header a:hover{
     /*Popup*/
     <script>
       $(function(){
-
         $(document).ready(function(){
-          if(!$.cookie('NuevoDiseño')){
-            $(".overlay").show();
-            $.cookie('NuevoDiseño', 'Y', {expires: 365*3});
+        console.log(document.cookie);
+        var visit = getCookie("cookie");
+          if(visit == null){
+            $('.overlay').show();
+            var expire = new Date();
+            expire = Date(expire.getTime()+7776000000);
+            document.cookie = "cookie=here; expires=" + expire;
           }
-          else{
+          else {
             $('.content').show();
           }
-        });
       });
+      });
+
+      function getCookie(c_name) {
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1) {
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1) {
+        c_value = null;
+    } else {
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1) {
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start, c_end));
+    }
+    return c_value;
+}
     </script>
     <script>
 
