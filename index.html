@@ -242,6 +242,17 @@ header a:hover{
 });
     </script>
 
+    /*Popup*/
+    <script>
+      $(function(){
+
+$('.close').click(function(){
+    $('.overlay').hide();
+    $('.content').show();
+});
+      });
+    </script>
+
     <header>
       <div class="navbar" style="background-color: white;">
           <div class="container">
@@ -262,7 +273,12 @@ header a:hover{
     </div>
     </header>
 
- 
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close">&times;</a>
+          <img src="nueva_imagen.png">
+        </div>
+      </div>
     
         <!-- Aqui  esta la division de servicios-->
         <div class="container_video">
