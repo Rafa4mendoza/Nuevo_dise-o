@@ -171,8 +171,8 @@ padding-left: 0em;
 
 .popup {
     margin: 8% auto;
-    width: 600px;
-    height: 600px;
+    width: 45vw;
+    height: 45vw;
     position: relative;
     transition: all 5s ease-in-out;
 }
